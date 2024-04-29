@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "MechShooter",
+			"Path": "../Source/MechShooter.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MechShooterEditor",
+			"Path": "../Source/MechShooterEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

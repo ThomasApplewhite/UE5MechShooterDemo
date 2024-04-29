@@ -5,4 +5,20 @@ Creation-Date: 2024-04-28T20:20:53-07:00
 ====== Home ======
 Created Sunday 28 April 2024
 
-This Project is going to be a Portfolio Piece for my Unreal/C++ a
+This Project is going to be a Portfolio Piece for my Unreal/C++ abilities. Plan is to include the following...
+
+Mechanics:
+* First-Person Characters
+* Selectable Gear
+* Mech Abilities
+* Multiplayer Matches
+* AI Teammates
+
+Using the following systems:
+* FPS Characters
+* Networking
+* Gameplay Ability System
+* AI
+* UMG
+
+That sounds like a lot, and it is, but the plan is to be reeeeeeeeeaaaaaaaaalllllllyyyy content light. This is a portfolio piece, after all. The code is what matters here.

@@ -1,0 +1,868 @@
+{
+	"folders": [
+		{
+			"name": "MechShooter",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "MechShooter Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Debug",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Debug",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Debug",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"DebugGame",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"DebugGame",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"DebugGame",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Development",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Development",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Development",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Test",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Test",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Test",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Shipping",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Shipping",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"Linux",
+					"Shipping",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Debug",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Debug",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Debug",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"DebugGame",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"DebugGame",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"DebugGame",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Development",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Development",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Development",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Test",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Test",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Test",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Shipping",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Shipping",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooter LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooter LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooter",
+					"LinuxArm64",
+					"Shipping",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooterEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooterEditor",
+					"Linux",
+					"Debug",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooterEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooterEditor",
+					"Linux",
+					"Debug",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooterEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooterEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooterEditor",
+					"Linux",
+					"Debug",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooterEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooterEditor",
+					"Linux",
+					"DebugGame",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooterEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooterEditor",
+					"Linux",
+					"DebugGame",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooterEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooterEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooterEditor",
+					"Linux",
+					"DebugGame",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooterEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooterEditor",
+					"Linux",
+					"Development",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooterEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooterEditor",
+					"Linux",
+					"Development",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MechShooterEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "MechShooterEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"MechShooterEditor",
+					"Linux",
+					"Development",
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch MechShooter (Debug)",
+				"request": "launch",
+				"program": "/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/Binaries/Linux/MechShooter-Linux-Debug",
+				"preLaunchTask": "MechShooter Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch MechShooter (DebugGame)",
+				"request": "launch",
+				"program": "/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/Binaries/Linux/MechShooter-Linux-DebugGame",
+				"preLaunchTask": "MechShooter Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch MechShooter (Development)",
+				"request": "launch",
+				"program": "/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/Binaries/Linux/MechShooter",
+				"preLaunchTask": "MechShooter Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch MechShooter (Test)",
+				"request": "launch",
+				"program": "/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/Binaries/Linux/MechShooter-Linux-Test",
+				"preLaunchTask": "MechShooter Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch MechShooter (Shipping)",
+				"request": "launch",
+				"program": "/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/Binaries/Linux/MechShooter-Linux-Shipping",
+				"preLaunchTask": "MechShooter Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch MechShooterEditor (Debug)",
+				"request": "launch",
+				"program": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "MechShooterEditor Linux Debug Build",
+				"args": [
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject"
+				],
+				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch MechShooterEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "MechShooterEditor Linux DebugGame Build",
+				"args": [
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject"
+				],
+				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch MechShooterEditor (Development)",
+				"request": "launch",
+				"program": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "MechShooterEditor Linux Development Build",
+				"args": [
+					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject"
+				],
+				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine"
+			}
+		]
+	}
+}
