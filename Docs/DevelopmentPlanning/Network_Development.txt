@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-04-29T19:11:54-07:00
+
+====== Network Development ======
+Created Monday 29 April 2024
+
+How do we get two players to interact with each other?
+The two players need to:
+* Connect to the same server
+* Shoot Weapons
+* See each other
+* Damage each other
+
+[*] Client-side models for other players
+	[x] Set correct gun equip animations for players
+		* Not important, mechs won't pick up guns mid-fight
+[ ] Game connection interface (a basic one, so players can connect to each other in builds
+	[ ] Local host connection options
+	[ ] "Spectator Camera" to give joing players something to look at"
+[ ] Damage System
+	* Damage application is a typical use of Gameplay Effects. Should this be where the GAS starts?
+[ ] Health Component

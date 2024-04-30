@@ -840,7 +840,7 @@
 					"/media/thomas/storage/GameProjects/UE5MechShooterPortfolio/MechShooter/MechShooter.uproject"
 				],
 				"cwd": "/home/thomas/GameDevTools/Unreal/UnrealEngine",
-				"type": "cppdbg",
+				"type": "lldb",
 				"visualizerFile": "/home/thomas/GameDevTools/Unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 				"showDisplayString": true
 			},

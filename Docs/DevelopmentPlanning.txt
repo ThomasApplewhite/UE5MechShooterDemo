@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-04-29T19:07:02-07:00
+
+====== DevelopmentPlanning ======
+Created Monday 29 April 2024
+
+The mechanical systems I'd like to make are:
+[ ] First-Person Movement and Shooting (should already be part of the FPS Template)
+[ ] Networked Multiplayer
+[ ] Basic Menus
+[ ] Abilities
+[ ] Selectable Abilities from a Menu
+[ ] AI Teammates
+
+After those are made, I'll move on to 'content'; making the game a real game instead of just a tech demo that exists in the template map. This'll include mechanical abilities, art and audio, and actual mech feel.
