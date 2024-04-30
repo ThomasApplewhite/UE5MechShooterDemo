@@ -1,35 +1,35 @@
 #################################
 # Unreal Engine Generated Files #
 #################################
-/[Bb]uild
-/[Bb]uilds
-/Binaries
-/DerivedDataCache
-/Intermediate
-/Saved
+MechShooter/[Bb]uild
+MechShooter/[Bb]uilds
+MechShooter/Binaries
+MechShooter/DerivedDataCache
+MechShooter/Intermediate
+MechShooter/Saved
 
 #################################
 # Visual Studio Generated Files #
 #################################
 # Cache Directory
-.vs
+MechShooter/.vs
 # User Specific Files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+MechShooter/*.rsuser
+MechShooter/*.suo
+MechShooter/*.user
+MechShooter/*.userosscache
+MechShooter/*.sln.docstates
 # CPP Cache Files
-*.VC.db
-*.opendb
-*.opensdf
-*.sdf
+MechShooter/*.VC.db
+MechShooter/*.opendb
+MechShooter/*.opensdf
+MechShooter/*.sdf
 # Solution Files
-*.sln
+MechShooter/*.sln
 # VSCode Cache Directory
-.vscode
+MechShooter/.vscode
 # VSCode History Files
-**/.history
+MechShooter/**/.history
 
 #################################
 # Miscellaneous Generated Files #
