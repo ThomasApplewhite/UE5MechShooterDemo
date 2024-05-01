@@ -17,7 +17,9 @@ The two players need to:
 		* Not important, mechs won't pick up guns mid-fight
 [ ] Game connection interface (a basic one, so players can connect to each other in builds
 	[ ] Local host connection options
-	[ ] "Spectator Camera" to give joing players something to look at"
+	[x] "Spectator Camera" to give joing players something to look at"
+		* Not necessary
 [ ] Damage System
 	* Damage application is a typical use of Gameplay Effects. Should this be where the GAS starts?
 [ ] Health Component
+	* Definitely start the GAS here
