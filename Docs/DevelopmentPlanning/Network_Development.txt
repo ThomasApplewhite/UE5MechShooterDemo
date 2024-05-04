@@ -12,6 +12,7 @@ The two players need to:
 * See each other
 * Damage each other
 
+[ ] Figure out a better way to develop UE5 on linux, 'cause VS Code ain't it
 [*] Client-side models for other players
 	[x] Set correct gun equip animations for players
 		* Not important, mechs won't pick up guns mid-fight
@@ -19,7 +20,9 @@ The two players need to:
 	[ ] Local host connection options
 	[x] "Spectator Camera" to give joing players something to look at"
 		* Not necessary
-[ ] Damage System
-	* Damage application is a typical use of Gameplay Effects. Should this be where the GAS starts?
-[ ] Health Component
-	* Definitely start the GAS here
+[ ] GameplayAbilitySystem Attributes and GameplayEffects
+	[ ] Health Attribute and related events
+	[ ] Damage GameplayEffect
+	[ ] Weapon shots deal damage instead of bouncing off of target
+[ ] Player Character functionality
+	[ ] Death Handling
